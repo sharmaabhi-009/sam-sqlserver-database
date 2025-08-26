@@ -1,0 +1,307 @@
+2025-08-26 14:23:36,596 |  INFO: Starting Solace AI Event Connector
+2025-08-26 14:23:36,596 |  INFO: Creating app sql-absharma-app
+2025-08-26 14:23:36,597 |  INFO: On macOS. Applying asyncio child watcher fix for Python 3.13.5
+2025-08-26 14:23:36,597 |  INFO: Successfully applied asyncio fix. get_child_watcher is now patched to use ThreadedChildWatcher.
+2025-08-26 14:23:36,597 |  INFO: On macOS. Applying asyncio child watcher fix for Python 3.13.5
+2025-08-26 14:23:36,597 |  INFO: Successfully applied asyncio fix. get_child_watcher is now patched to use ThreadedChildWatcher.
+2025-08-26 14:23:36,610 |  INFO: Configuring A2A_ADK_App for Agent: 'SqlAbsharma' in Namespace: 'default_namespace/'
+2025-08-26 14:23:36,610 |  INFO: Automatically generated subscriptions for Agent 'SqlAbsharma': [{'topic': 'default_namespace/a2a/v1/agent/request/SqlAbsharma'}, {'topic': 'default_namespace/a2a/v1/discovery/agentcards'}, {'topic': 'default_namespace/a2a/v1/agent/response/SqlAbsharma/>'}, {'topic': 'default_namespace/a2a/v1/agent/status/SqlAbsharma/>'}]
+2025-08-26 14:23:36,612 |  WARNING: broker[sql-absharma-app_broker_input]: Invalid reconnection strategy: None. Using default Forever Retry strategy.
+2025-08-26 14:23:36,612 |  WARNING: broker[sql-absharma-app_broker_input]: retry_interval not provided, using default value of 3000 milliseconds
+2025-08-26 14:23:36,614 |  INFO: broker[sql-absharma-app_broker_input]: Connecting to broker...
+2025-08-26 14:23:36,622 |  INFO: broker[sql-absharma-app_broker_input]: Successfully connected to broker.
+2025-08-26 14:23:36,627 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing A2A ADK Host Component...
+2025-08-26 14:23:36,627 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Default session behavior set to: PERSISTENT
+2025-08-26 14:23:36,627 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Artifact Handling Mode: ignore
+2025-08-26 14:23:36,627 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Configuration retrieved successfully.
+2025-08-26 14:23:36,627 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Attempting to load init_function: sam_sql_database.lifecycle.initialize_sql_agent
+2025-08-26 14:23:36,631 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Found Pydantic config model 'SqlAgentInitConfigModel' for init_function parameter 'init_config'.
+2025-08-26 14:23:36,631 |  INFO: [SqlAbsharma:init_sql_agent] Starting New SQLServer Database Agent initialization...
+2025-08-26 14:23:36,640 |  INFO: Database engine created successfully for type: SQLServerService
+2025-08-26 14:23:36,640 |  INFO: CsvImportService initialized.
+2025-08-26 14:23:36,640 |  INFO: [SqlAbsharma:init_sql_agent] DatabaseService for typeeee 'sqlserver' initialized successfully.
+2025-08-26 14:23:36,640 |  INFO: [SqlAbsharma:init_sql_agent] No CSV files or directories configured for import.
+2025-08-26 14:23:36,640 |  INFO: [SqlAbsharma:init_sql_agent] Auto-detecting database schema...
+2025-08-26 14:23:36,640 |  INFO: [SqlAbsharma:init_sql_agent] Auto-detecting Start...
+2025-08-26 14:23:36,640 |  INFO: %s get_detailed_schema_representation start...
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.SrNo: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ClientCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Exch: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchType: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ScripCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ScripName: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.BuySell: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Qty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Rate: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.OrgQty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.PendingQty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeOrderID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeTradeID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeTradeTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.CurrTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Series: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Name: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Mismatch: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ClientType: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Stlmnt: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Terminal: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.BrokerCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeOrderTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,723 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.SequenceNumber: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,739 |  WARNING: Could not fetch unique values for Trades.TradeID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,740 |  WARNING: Could not fetch unique values for Trades.Symbol: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,740 |  WARNING: Could not fetch unique values for Trades.Quantity: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,740 |  WARNING: Could not fetch unique values for Trades.Price: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,740 |  WARNING: Could not fetch unique values for Trades.TradeDate: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,740 |  INFO: %s get_detailed_schema_representation end...
+2025-08-26 14:23:36,741 |  INFO: [SqlAbsharma:init_sql_agent] schema_summary_for_llm...
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.SrNo: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ClientCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Exch: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchType: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ScripCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ScripName: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.BuySell: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Qty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Rate: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.OrgQty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.PendingQty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeOrderID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeTradeID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeTradeTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.CurrTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Series: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Name: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Mismatch: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ClientType: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Stlmnt: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Terminal: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,767 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.BrokerCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,768 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeOrderTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,768 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.SequenceNumber: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,783 |  WARNING: Could not fetch unique values for Trades.TradeID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,783 |  WARNING: Could not fetch unique values for Trades.Symbol: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,784 |  WARNING: Could not fetch unique values for Trades.Quantity: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,784 |  WARNING: Could not fetch unique values for Trades.Price: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,784 |  WARNING: Could not fetch unique values for Trades.TradeDate: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:23:36,784 |  INFO: [SqlAbsharma:init_sql_agent] schema_description...
+2025-08-26 14:23:36,786 |  INFO: [SqlAbsharma:init_sql_agent] Schema auto-detection complete.
+2025-08-26 14:23:36,786 |  INFO: [SqlAbsharma:init_sql_agent] Stored database handler and schema information in agent_specific_state.
+2025-08-26 14:23:36,786 |  INFO: [SqlAbsharma:init_sql_agent] SQL Database Agent initialization completed successfully.
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Static agent system instruction string set.
+2025-08-26 14:23:36,786 |  INFO: [SqlAbsharma:init_sql_agent] System instruction string for SQL agent has been set on host_component.
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Successfully executed init_function: sam_sql_database.lifecycle.initialize_sql_agent
+2025-08-26 14:23:36,786 |  INFO: InvocationMonitor initialized. Logging to directory: /tmp/solace-agent-mesh
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing synchronous ADK services...
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing Session Service of type: memory
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing Artifact Service of type: filesystem
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Using 'namespace' scope for filesystem artifacts: default_namespace/
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Sanitized scope identifier: default_namespace
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing Memory Service of type: memory
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Synchronous ADK services initialized.
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Starting dedicated async thread for MCP/ADK initialization...
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Dedicated async thread started.
+2025-08-26 14:23:36,786 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Waiting for async initialization to complete...
+2025-08-26 14:23:36,787 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Loading tools asynchronously in dedicated thread...
+2025-08-26 14:23:36,787 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Loading tools from 'tools' list configuration...
+2025-08-26 14:23:36,787 |  INFO: Loaded 7 tools from built-in group: artifact_management
+2025-08-26 14:23:36,787 |  INFO: Loaded 1 tools from built-in group: data_analysis
+2025-08-26 14:23:36,787 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Loaded Python tool: execute_sql_query from sam_sql_database.tools.
+2025-08-26 14:23:36,787 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Implicitly loaded internal framework tool: _notify_artifact_save
+2025-08-26 14:23:36,787 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Implicitly loaded internal framework tool: _continue_generation
+2025-08-26 14:23:36,787 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Finished loading tools. Total tools for ADK: 11. Total SAM built-ins for prompt: 10. Peer tools added dynamically.
+2025-08-26 14:23:36,787 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing ADK Agent/Runner asynchronously in dedicated thread...
+2025-08-26 14:23:36,787 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing ADK Agent 'SqlAbsharma' (Peer tools & instructions added via callback)...
+2025-08-26 14:23:36,787 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Applying default resilience settings for LiteLlm model (num_retries=3, timeout=120). These can be overridden in YAML.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initialized LiteLlm model: openai/azure-gpt-4o-mini
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added repair_history_callback to before_model chain.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added _inject_peer_tools_callback to before_model chain.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added _filter_tools_by_capability_callback to before_model chain.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added _inject_gateway_instructions_callback to before_model chain.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added inject_dynamic_instructions_callback to before_model chain.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Final before_model_callback chain (Solace logging now occurs last) assigned to agent.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Assigned notify_tool_invocation_start_callback as before_tool_callback.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Chained 'manage_large_mcp_tool_responses_callback' and 'after_tool_callback_inject_metadata' as after_tool_callback.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added process_artifact_blocks_callback to after_model chain.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added auto_continue_on_max_tokens_callback to after_model chain.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Chained all after_model_callbacks and assigned to agent.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  ADK Agent 'SqlAbsharma' created. Callbacks assigned.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing ADK Runner for agent 'SqlAbsharma'...
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  ADK Runner created successfully.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Populating agent card tool manifest...
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Agent card tool manifest populated with 11 tools.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Async initialization steps complete in dedicated thread.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  _perform_async_init: Signaling success to main thread.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Async initialization completed successfully.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Scheduling agent card publishing every 30 seconds.
+2025-08-26 14:23:36,788 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initialization complete for agent: SqlAbsharma
+2025-08-26 14:23:36,788 |  WARNING: broker[sql-absharma-app_broker_output]: Invalid reconnection strategy: None. Using default Forever Retry strategy.
+2025-08-26 14:23:36,788 |  WARNING: broker[sql-absharma-app_broker_output]: retry_interval not provided, using default value of 3000 milliseconds
+2025-08-26 14:23:36,789 |  INFO: broker[sql-absharma-app_broker_output]: Connecting to broker...
+2025-08-26 14:23:36,792 |  INFO: broker[sql-absharma-app_broker_output]: Successfully connected to broker.
+2025-08-26 14:23:36,793 |  INFO: Solace AI Event Connector started successfully
+2025-08-26 14:25:57,768 |  INFO: Received keyboard interrupt - stopping
+2025-08-26 14:25:57,770 |  INFO: Stopping Solace AI Event Connector
+2025-08-26 14:25:57,976 |  INFO: Cleaning up Solace AI Event Connector
+2025-08-26 14:25:57,976 |  INFO: Cleaning up app: sql-absharma-app
+2025-08-26 14:25:57,977 |  INFO: Cleaning up flow: sql-absharma-app_implicit_flow
+2025-08-26 14:25:57,977 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Cleaning up A2A ADK Host Component.
+2025-08-26 14:25:57,977 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Attempting to load and execute cleanup_function: sam_sql_database.lifecycle.cleanup_sql_agent_resources
+2025-08-26 14:25:57,977 |  INFO: [SqlAbsharma:cleanup_sql_agent] Cleaning up SQL Database Agent resources...
+2025-08-26 14:25:57,978 |  INFO: Database engine disposed successfully.
+2025-08-26 14:25:57,978 |  INFO: [SqlAbsharma:cleanup_sql_agent] DatabaseService closed successfully.
+2025-08-26 14:25:57,979 |  INFO: [SqlAbsharma:cleanup_sql_agent] SQL Database Agent resource cleanup finished.
+2025-08-26 14:25:57,979 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Successfully executed cleanup_function: sam_sql_database.lifecycle.cleanup_sql_agent_resources
+2025-08-26 14:25:57,979 |  INFO: InvocationMonitor: Cleanup called.
+2025-08-26 14:25:57,979 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Performing async cleanup via dedicated thread...
+2025-08-26 14:25:57,979 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Async cleanup completed.
+2025-08-26 14:25:57,980 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Cleanup: Stopping dedicated async loop...
+2025-08-26 14:25:57,980 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Cleanup: Joining dedicated async thread...
+2025-08-26 14:25:57,980 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Dedicated async thread loop finishing.
+2025-08-26 14:25:57,980 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Dedicated async thread stopped and joined.
+2025-08-26 14:25:57,981 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Component cleanup finished.
+2025-08-26 14:25:57,981 |  INFO: Cleanup completed
+2025-08-26 14:30:26,194 |  INFO: Starting Solace AI Event Connector
+2025-08-26 14:30:26,195 |  INFO: Creating app sql-absharma-app
+2025-08-26 14:30:26,196 |  INFO: On macOS. Applying asyncio child watcher fix for Python 3.13.5
+2025-08-26 14:30:26,196 |  INFO: Successfully applied asyncio fix. get_child_watcher is now patched to use ThreadedChildWatcher.
+2025-08-26 14:30:26,196 |  INFO: On macOS. Applying asyncio child watcher fix for Python 3.13.5
+2025-08-26 14:30:26,196 |  INFO: Successfully applied asyncio fix. get_child_watcher is now patched to use ThreadedChildWatcher.
+2025-08-26 14:30:26,210 |  INFO: Configuring A2A_ADK_App for Agent: 'SqlAbsharma' in Namespace: 'default_namespace/'
+2025-08-26 14:30:26,210 |  INFO: Automatically generated subscriptions for Agent 'SqlAbsharma': [{'topic': 'default_namespace/a2a/v1/agent/request/SqlAbsharma'}, {'topic': 'default_namespace/a2a/v1/discovery/agentcards'}, {'topic': 'default_namespace/a2a/v1/agent/response/SqlAbsharma/>'}, {'topic': 'default_namespace/a2a/v1/agent/status/SqlAbsharma/>'}]
+2025-08-26 14:30:26,211 |  WARNING: broker[sql-absharma-app_broker_input]: Invalid reconnection strategy: None. Using default Forever Retry strategy.
+2025-08-26 14:30:26,211 |  WARNING: broker[sql-absharma-app_broker_input]: retry_interval not provided, using default value of 3000 milliseconds
+2025-08-26 14:30:26,214 |  INFO: broker[sql-absharma-app_broker_input]: Connecting to broker...
+2025-08-26 14:30:26,222 |  INFO: broker[sql-absharma-app_broker_input]: Successfully connected to broker.
+2025-08-26 14:30:26,228 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing A2A ADK Host Component...
+2025-08-26 14:30:26,229 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Default session behavior set to: PERSISTENT
+2025-08-26 14:30:26,229 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Artifact Handling Mode: ignore
+2025-08-26 14:30:26,229 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Configuration retrieved successfully.
+2025-08-26 14:30:26,229 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Attempting to load init_function: sam_sql_database.lifecycle.initialize_sql_agent
+2025-08-26 14:30:26,232 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Found Pydantic config model 'SqlAgentInitConfigModel' for init_function parameter 'init_config'.
+2025-08-26 14:30:26,232 |  INFO: [SqlAbsharma:init_sql_agent] Starting New SQLServer Database Agent initialization...
+2025-08-26 14:30:26,243 |  INFO: Database engine created successfully for type: SQLServerService
+2025-08-26 14:30:26,243 |  INFO: CsvImportService initialized.
+2025-08-26 14:30:26,243 |  INFO: [SqlAbsharma:init_sql_agent] DatabaseService for typeeee 'sqlserver' initialized successfully.
+2025-08-26 14:30:26,243 |  INFO: [SqlAbsharma:init_sql_agent] No CSV files or directories configured for import.
+2025-08-26 14:30:26,243 |  INFO: [SqlAbsharma:init_sql_agent] Auto-detecting database schema...
+2025-08-26 14:30:26,243 |  INFO: [SqlAbsharma:init_sql_agent] Auto-detecting Start...
+2025-08-26 14:30:26,243 |  INFO: %s get_detailed_schema_representation start...
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.SrNo: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ClientCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Exch: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchType: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ScripCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ScripName: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.BuySell: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Qty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Rate: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.OrgQty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.PendingQty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeOrderID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeTradeID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeTradeTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.CurrTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Series: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Name: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Mismatch: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ClientType: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Stlmnt: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Terminal: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.BrokerCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeOrderTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,341 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.SequenceNumber: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,356 |  WARNING: Could not fetch unique values for Trades.TradeID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,356 |  WARNING: Could not fetch unique values for Trades.Symbol: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,356 |  WARNING: Could not fetch unique values for Trades.Quantity: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,356 |  WARNING: Could not fetch unique values for Trades.Price: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,356 |  WARNING: Could not fetch unique values for Trades.TradeDate: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,356 |  INFO: %s get_detailed_schema_representation end...
+2025-08-26 14:30:26,357 |  INFO: [SqlAbsharma:init_sql_agent] schema_summary_for_llm...
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.SrNo: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ClientCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Exch: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchType: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ScripCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ScripName: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.BuySell: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Qty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Rate: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.OrgQty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,379 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.PendingQty: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeOrderID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeTradeID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeTradeTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.CurrTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Series: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Name: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Mismatch: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ClientType: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Stlmnt: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.Terminal: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.BrokerCode: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.ExchangeOrderTime: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,380 |  WARNING: Could not fetch unique values for TradeCM_Encrypt.SequenceNumber: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,395 |  WARNING: Could not fetch unique values for Trades.TradeID: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,395 |  WARNING: Could not fetch unique values for Trades.Symbol: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,395 |  WARNING: Could not fetch unique values for Trades.Quantity: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,395 |  WARNING: Could not fetch unique values for Trades.Price: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,395 |  WARNING: Could not fetch unique values for Trades.TradeDate: cannot access local variable 'query' where it is not associated with a value
+2025-08-26 14:30:26,395 |  INFO: [SqlAbsharma:init_sql_agent] schema_description...
+2025-08-26 14:30:26,397 |  INFO: [SqlAbsharma:init_sql_agent] Schema auto-detection complete.
+2025-08-26 14:30:26,397 |  INFO: [SqlAbsharma:init_sql_agent] Stored database handler and schema information in agent_specific_state.
+2025-08-26 14:30:26,397 |  INFO: [SqlAbsharma:init_sql_agent] SQL Database Agent initialization completed successfully.
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Static agent system instruction string set.
+2025-08-26 14:30:26,397 |  INFO: [SqlAbsharma:init_sql_agent] System instruction string for SQL agent has been set on host_component.
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Successfully executed init_function: sam_sql_database.lifecycle.initialize_sql_agent
+2025-08-26 14:30:26,397 |  INFO: InvocationMonitor initialized. Logging to directory: /tmp/solace-agent-mesh
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing synchronous ADK services...
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing Session Service of type: memory
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing Artifact Service of type: filesystem
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Using 'namespace' scope for filesystem artifacts: default_namespace/
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Sanitized scope identifier: default_namespace
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing Memory Service of type: memory
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Synchronous ADK services initialized.
+2025-08-26 14:30:26,397 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Starting dedicated async thread for MCP/ADK initialization...
+2025-08-26 14:30:26,398 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Dedicated async thread started.
+2025-08-26 14:30:26,398 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Waiting for async initialization to complete...
+2025-08-26 14:30:26,398 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Loading tools asynchronously in dedicated thread...
+2025-08-26 14:30:26,398 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Loading tools from 'tools' list configuration...
+2025-08-26 14:30:26,398 |  INFO: Loaded 7 tools from built-in group: artifact_management
+2025-08-26 14:30:26,398 |  INFO: Loaded 1 tools from built-in group: data_analysis
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Loaded Python tool: execute_sql_query from sam_sql_database.tools.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Implicitly loaded internal framework tool: _notify_artifact_save
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Implicitly loaded internal framework tool: _continue_generation
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Finished loading tools. Total tools for ADK: 11. Total SAM built-ins for prompt: 10. Peer tools added dynamically.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing ADK Agent/Runner asynchronously in dedicated thread...
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing ADK Agent 'SqlAbsharma' (Peer tools & instructions added via callback)...
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Applying default resilience settings for LiteLlm model (num_retries=3, timeout=120). These can be overridden in YAML.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initialized LiteLlm model: openai/azure-gpt-4o-mini
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added repair_history_callback to before_model chain.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added _inject_peer_tools_callback to before_model chain.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added _filter_tools_by_capability_callback to before_model chain.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added _inject_gateway_instructions_callback to before_model chain.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added inject_dynamic_instructions_callback to before_model chain.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Final before_model_callback chain (Solace logging now occurs last) assigned to agent.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Assigned notify_tool_invocation_start_callback as before_tool_callback.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Chained 'manage_large_mcp_tool_responses_callback' and 'after_tool_callback_inject_metadata' as after_tool_callback.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added process_artifact_blocks_callback to after_model chain.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Added auto_continue_on_max_tokens_callback to after_model chain.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Chained all after_model_callbacks and assigned to agent.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  ADK Agent 'SqlAbsharma' created. Callbacks assigned.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initializing ADK Runner for agent 'SqlAbsharma'...
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  ADK Runner created successfully.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Populating agent card tool manifest...
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Agent card tool manifest populated with 11 tools.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Async initialization steps complete in dedicated thread.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  _perform_async_init: Signaling success to main thread.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Async initialization completed successfully.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Scheduling agent card publishing every 30 seconds.
+2025-08-26 14:30:26,399 |  INFO: [solace_ai_connector.sql-absharma-app_implicit_flow.<unnamed>]  Initialization complete for agent: SqlAbsharma
+2025-08-26 14:30:26,400 |  WARNING: broker[sql-absharma-app_broker_output]: Invalid reconnection strategy: None. Using default Forever Retry strategy.
+2025-08-26 14:30:26,400 |  WARNING: broker[sql-absharma-app_broker_output]: retry_interval not provided, using default value of 3000 milliseconds
+2025-08-26 14:30:26,401 |  INFO: broker[sql-absharma-app_broker_output]: Connecting to broker...
+2025-08-26 14:30:26,404 |  INFO: broker[sql-absharma-app_broker_output]: Successfully connected to broker.
+2025-08-26 14:30:26,405 |  INFO: Solace AI Event Connector started successfully
+2025-08-26 14:30:49,557 |  INFO: Received keyboard interrupt - stopping
+2025-08-26 14:30:49,558 |  INFO: Stopping Solace AI Event Connector
